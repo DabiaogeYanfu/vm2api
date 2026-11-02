@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- #836：`ensureSlotGuestBinDir` 原子替换失败时清理 `${dest}.${pid}.tmp` 暂存文件，避免 `data/run/slot-guest-bin` 下残留堆积。
+
 ## 1.4.032 — 2026-11-01
 
 - OpenAI GPT 模型页支持按上游 `priority` 档位公开 `<model>-fast` 别名；调度前还原基模型并发送 `service_tier: "priority"`。
